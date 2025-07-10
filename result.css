@@ -1,0 +1,251 @@
+:root {
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    
+    --Font-size: 18px;
+
+    --reaction-bg: hsla(0, 100%, 67%, 0.1);
+    --memory-bg: hsla(39, 100%, 56%, 0.1); 
+    --verbal-bg: hsla(166, 100%, 37%, 0.1); 
+    --visual-bg: hsla(234, 85%, 45%, 0.1); 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk";
+}
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+
+.first-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Light-royal-blue-background);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.first-section h1 {
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.circle {
+    background-color: hsla(256, 72%, 46%, 0.9);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle h2 {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.circle span {
+    color: var(--Light-lavender);
+}
+
+.remarks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.remarks h3 {
+    margin-bottom: -8px;
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.remarks p {
+    padding: 0px 5rem;
+    text-align: center;
+    font-size: 15px;
+    color: var(--Light-lavender);
+     font-weight: 300;
+     margin-bottom: 2rem;
+}
+
+.second-section {
+    padding: 25px;
+}
+
+.second-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+
+.reaction-bg {
+    background-color: var(--reaction-bg);
+}
+
+.memory-bg {
+    background-color: var(--memory-bg);
+}
+
+.verbal-bg {
+    background-color: var(--verbal-bg);
+}
+
+.visual-bg {
+    background-color: var(--visual-bg);
+}
+
+
+.reaction {
+    color: var(--Light-red);
+}
+
+.memory {
+    color: var(--Orangey-yellow);
+}
+
+.verbal {
+    color: var(--Green-teal);
+}
+
+.visual {
+    color: var(--Cobalt-blue);
+}
+
+
+.second-section h1 {
+    color: var(--Dark-gray-blue);
+    margin-bottom: 10px;
+}
+
+.second-section .row p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.second-section .row span {
+    color: var(--Dark-gray-blue);
+    font-size: 15px;
+}
+
+.last-btn {
+    padding: 16px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 14px;
+    color: var(--Pale-blue);
+    background-color: var(--Dark-gray-blue);
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 1rem;}
+.attribution a { color: var(--Cobalt-blue); }
+
+@media (min-width: 1024px) {
+    body{
+        background-color: var(--Pale-blue);
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+.first-section {
+  width: 250px;
+  height: 374px;
+   margin-right: -1.5rem;
+  position: relative; 
+  z-index: 1; 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+
+.second-section {
+  background-color: var(--White);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 0; 
+  border-bottom-left-radius: 0;
+
+  width: 250px;
+  margin-left: 10px;
+
+  
+}
+
+.first-section h1 {
+    font-size: 23px;
+    font-weight: 300;
+    color: var(--Light-lavender);
+}
+
+.circle {
+    width: 170px;
+    height: 500px;
+    
+}
+
+.circle span {
+    margin-top: -1rem;
+}
+
+.circle h2 {
+    font-size: 6rem;
+}
+
+.remarks p {
+    padding: 1rem 2rem;
+}
+
+.remarks h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.last-btn {
+    margin-top: 1rem;
+}
+}
