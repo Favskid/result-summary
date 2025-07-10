@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--Light-royal-blue-background);
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background) 5%, var(--Light-royal-blue-background));
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .circle {
-    background-color: hsla(256, 72%, 46%, 0.9);
+    background: linear-gradient(to bottom, var(--Violet-blue-circle), rgba(106, 27, 154, 0));
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -223,7 +223,7 @@ body {
 }
 
 .circle {
-    width: 170px;
+    width: 150px;
     height: 500px;
     
 }
